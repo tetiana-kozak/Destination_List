@@ -1,0 +1,10 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: #101010, 0, 0;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}

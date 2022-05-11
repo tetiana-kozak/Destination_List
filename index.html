@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination list</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h1>Let's plan your next trip!</h1>
+        </header>
+
+        <form id="destination-form">
+
+            <label for="destination-form__name">Destination Name</label>
+            <input type="text" id="destination-form__name" required>
+            
+            <label for="destination-form__location">Destination Location</label>
+            <input type="text" id="destination-form__location" required>
+
+            <label for="destination-form__photo">Photo</label>
+            <input type="url" id="destination-form__photo" required>
+
+            <label for="destination-form__description">Description</label>
+            <input type="text" id="destination-form__description" required>
+
+            <button type="submit">Add to List</button>
+
+        </form>
+        
+        <article id="destination-container">
+
+            <div class="destination-container__card">
+
+                <img src="assets/pictures/01.jpg">
+                
+                <div class="destination-container__card-body">
+                    <h2>Destination Name</h2>
+                    <h3>Destination Location</h3>
+                    <p>Destination Description</p>
+                    <button>Remove</button>
+
+                </div>
+            </div>
+
+        </article>
+
+    </div>
+
+</body>
+</html>
