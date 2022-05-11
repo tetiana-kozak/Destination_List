@@ -1,10 +1,98 @@
 * {
     font-family: 'Montserrat', sans-serif;
-    color: #101010, 0, 0;
+    color: #222222;
     font-size: 20px;
     box-sizing: border-box;
 }
 
+
 img{
     max-width: 100%;
+}
+
+h1{
+    font-size: 25px;
+    color: #f6f6f6;
+}
+
+header{
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    background-color: #222222;
+    color: #f6f6f6;
+}
+
+.container{
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.destination-form__title{
+    color: #222222;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+hr{
+    margin: 15px auto;
+    width: 60%;
+}
+
+section form{
+    width: 40%;
+}
+
+section article{
+    width: 50%;
+}
+
+label{
+    display: block;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    border: 0;
+    margin: 10px 0;
+    
+}
+
+input{
+    border-bottom: 1px solid #222222;;
+}
+
+input:focus {
+    outline: none;
+    border-color: #b5b5b5;
+}
+
+textarea{
+    resize: none;
+    border: 1px solid #222222;;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+textarea:focus {
+    outline: 1px #b5b5b5 ;
+    border: solid 1px #b5b5b5;
+}
+
+.destination-form button{
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    background-color: #222222;
+    color: #f6f6f6;
+    font-weight: 600;
+}
+
+.destination-form button:hover{
+    background-color: #353535;
 }

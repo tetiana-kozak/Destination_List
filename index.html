@@ -12,17 +12,19 @@
 </head>
 <body>
 
-    <div class="container">
+    <header class="header">
+        <h1>Let's plan your next trip!</h1>
+    </header>
+    
+    <section class="container">
 
-        <header class="header">
-            <h1>Let's plan your next trip!</h1>
-        </header>
+        <form id="destination-form" class="destination-form">
 
-        <form id="destination-form">
+            <h2 class="destination-form__title">Provide details of your trip</h2> <hr>
 
             <label for="destination-form__name">Destination Name</label>
             <input type="text" id="destination-form__name" required>
-            
+                
             <label for="destination-form__location">Destination Location</label>
             <input type="text" id="destination-form__location" required>
 
@@ -30,21 +32,21 @@
             <input type="url" id="destination-form__photo" required>
 
             <label for="destination-form__description">Description</label>
-            <input type="text" id="destination-form__description" required>
+            <textarea id="destination-form__description"></textarea>
 
             <button type="submit">Add to List</button>
 
         </form>
-        
+            
         <article id="destination-container">
 
             <div class="destination-container__card">
 
-                <img src="assets/pictures/01.jpg">
-                
+                <img src="assets/pic/01.jpg">
+                    
                 <div class="destination-container__card-body">
-                    <h2>Destination Name</h2>
-                    <h3>Destination Location</h3>
+                    <h3>Destination Name</h3>
+                    <h4>Destination Location</h4>
                     <p>Destination Description</p>
                     <button>Remove</button>
 
@@ -53,7 +55,7 @@
 
         </article>
 
-    </div>
-
+    </section>
+    
 </body>
 </html>
