@@ -40,26 +40,27 @@ header{
 hr{
     margin: 15px auto;
     width: 60%;
+    border: hidden;
+    border-top: #222222 solid 2px;
 }
 
 section form{
-    width: 40%;
+    width: 30%;
 }
 
 section article{
-    width: 50%;
+    width: 65%;
 }
 
 label{
     display: block;
+    margin-top: 15px;
 }
 
 input, textarea {
     display: block;
     width: 100%;
     border: 0;
-    margin: 10px 0;
-    
 }
 
 input{
@@ -76,6 +77,7 @@ textarea{
     border: 1px solid #222222;;
     height: 200px;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 textarea:focus {
@@ -88,6 +90,7 @@ textarea:focus {
     display: block;
     width: 100%;
     margin: 10px 0;
+    padding: 5px 0;
     background-color: #222222;
     color: #f6f6f6;
     font-weight: 600;
@@ -96,3 +99,56 @@ textarea:focus {
 .destination-form button:hover{
     background-color: #353535;
 }
+
+.destination-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.destination-container__card{
+    background-color: #f6f6f6;
+    border: 1px solid #222222;
+    height: fit-content;
+    width: 280px;
+    margin-bottom: 10px;
+}
+
+.destination-container__card-body{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.destination-container__card-text {
+    padding: 2%;
+}
+
+.destination-container__card-text h3{
+    font-size: 18px;
+}
+
+.destination-container__card-text h4{
+    font-size: 12px;
+    color: #696969;
+    margin-bottom: 10px;
+}
+
+.destination-container__card-text p{
+    font-size: 15px;
+    color: #696969;
+}
+
+.destination-container__card-body button{
+    cursor: pointer;
+    width: 100%;
+    padding: 2px 0;
+    background-color: #222222;
+    color: #f6f6f6;
+    font-size: 16px;
+    font-weight: 600;
+}
+
