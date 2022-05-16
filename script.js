@@ -1,3 +1,5 @@
+        // Form Submit
+
 const detailsForm = document.querySelector('#destination-form')
 detailsForm.addEventListener("submit", handleFormSubmit)
 
@@ -9,15 +11,27 @@ function handleFormSubmit(evt){
     const destPhoto = evt.target.elements["destination-form__photo"].value
     const destDescr = evt.target.elements["destination-form__description"].value
 
+            // Reset form
+
     for (let i = 0; i < detailsForm.length; i++) {
         detailsForm.elements[i].value = "";
         
     }
 
+            // Creating card
+
+    let destCard = createDestCard(destName, destLocation, destPhoto, destDescr)
+
+            // Add card to the page
+
+    document.querySelector('#destination-container').appendChild(destCard) 
+
 }
 
+        // Create Card (function) 
+
 function createDestCard(destFormName, destFormLocation, destFormPhoto, destFormDescr){
-    const card = document.createElement(div)
+    const card = document.createElement('div')
     card.className = "destination-container__card"
 
     const cardImg = document.createElement('img')
@@ -56,10 +70,17 @@ function createDestCard(destFormName, destFormLocation, destFormPhoto, destFormD
                 const removeBtn = document.createElement('button')
                 removeBtn.innerText = "Remove"
     
-                removeBtn.addEventListener('click', removeDestination)
+                removeBtn.addEventListener('click', RemoveCard)
             cardBody.appendChild(removeBtn)
 
     card.appendChild(cardBody)
     return card
 
+}
+
+        // Remove the Card (function)
+
+function RemoveCard(evt){
+    const card = evt.target.parentElement.parentElement
+    card.remove()
 }
